@@ -31,19 +31,18 @@ class _MyAppState extends State<MyApp> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
-            child: Container(
-              height: 100,
-              width: 100,
-              child: Text('hello world!'),
-              padding: EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                  color: Colors.purple,
-                  borderRadius: BorderRadius.circular(20)),
-            ),
-          ),
-          Row(
+              child: Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
+              Container(
+                height: 100,
+                width: 100,
+                child: Text('hello world!'),
+                padding: EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                    color: Colors.purple,
+                    borderRadius: BorderRadius.circular(20)),
+              ),
               Container(
                 height: 100,
                 width: 100,
@@ -54,7 +53,7 @@ class _MyAppState extends State<MyApp> {
                     color: Colors.pink),
               )
             ],
-          )
+          )),
         ],
       ),
     );
